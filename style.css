@@ -1,0 +1,41 @@
+* {
+  font-family: 'Russo One', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #2d2d2d
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+	position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365fa0;
+	font-size: 140px;
+  letter-spacing: 30px;
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(255, 255, 255, 0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
